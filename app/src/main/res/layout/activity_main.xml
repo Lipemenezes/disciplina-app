@@ -11,14 +11,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/class_label"
+        android:text="@string/discipline_label"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/class_hint"
+        android:hint="@string/discipline_hint"
         android:layout_marginBottom="20dp"
-        android:id="@+id/edit_class1"
+        android:id="@+id/edit_discipline1"
         />
 
     <LinearLayout
@@ -90,6 +90,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_next"
         android:layout_marginTop="20dp"
+        android:onClick="nextActivity"
         />
 
 </LinearLayout>

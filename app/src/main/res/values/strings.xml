@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">DisciplinaApp</string>
-    <string name="class_label">Disciplina</string>
-    <string name="class_hint">Digite a disciplina</string>
+    <string name="discipline_label">Disciplina</string>
+    <string name="discipline_hint">Digite a disciplina</string>
     <string name="grade1">Nota 1</string>
     <string name="grade2">Nota 2</string>
     <string name="grade3">Nota 3</string>
     <string name="btn_next">Próximo</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="label_avg_result">Média:</string>
+    <string name="label_discipline_result">Disciplina:</string>
+    <string name="label_situation_result">Situação:</string>
+    <string name="final_result">Resultado Final</string>
+    <string name="final_avg">Média geral:</string>
+    <string name="final_situation">Situação geral:</string>
+    <string name="btn_return">Voltar</string>
 </resources>

@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 
-import com.example.aluno.disciplinaapp.model.Class;
+import com.example.aluno.disciplinaapp.model.Discipline;
 
 public class MainActivity extends AppCompatActivity {
     private NumberPicker numberPicker1;
     private NumberPicker numberPicker2;
     private NumberPicker numberPicker3;
-    private EditText editClass;
+    private EditText editDiscipline;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         numberPicker1 = findViewById(R.id.picker1);
         numberPicker2 = findViewById(R.id.picker2);
         numberPicker3 = findViewById(R.id.picker3);
-        editClass = findViewById(R.id.edit_class1);
+        editDiscipline = findViewById(R.id.edit_discipline1);
 
         this.configNumberPicker(numberPicker1);
         this.configNumberPicker(numberPicker2);
@@ -40,15 +40,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextActivity(View view) {
-        Class c = new Class(
-            editClass.getText().toString(),
+        Discipline discipline = new Discipline(
+            editDiscipline.getText().toString(),
             numberPicker1.getValue(),
             numberPicker2.getValue(),
             numberPicker3.getValue()
         );
 
         Intent it = new Intent(this, SecondActivity.class);
-        it.putExtra("class", c);
+        it.putExtra("discipline", discipline);
+        startActivity(it);
     }
 
 }
