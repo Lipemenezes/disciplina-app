@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DisciplinaApp</string>
+    <string name="class_label">Disciplina</string>
+    <string name="class_hint">Digite a disciplina</string>
+    <string name="grade1">Nota 1</string>
+    <string name="grade2">Nota 2</string>
+    <string name="grade3">Nota 3</string>
+    <string name="btn_next">Próximo</string>
+</resources>
